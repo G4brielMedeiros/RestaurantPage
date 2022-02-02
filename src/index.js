@@ -1,7 +1,8 @@
-import pageLoad from "./functions/pageDemo";
+import pageLoad from "./pages/pageDemo";
+import getHomePage from "./pages/homePage";
 
 const content = document.getElementById("content");
 console.log(content);
-content.appendChild(pageLoad());
+content.appendChild(getHomePage());
 
 //TODO: Implement tab-switching logic

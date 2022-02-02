@@ -10,23 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/functions/pageLoad.js":
-/*!***********************************!*\
-  !*** ./src/functions/pageLoad.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _images_vvadyab_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/vvadyab.png */ \"./src/images/vvadyab.png\");\n\n\nfunction pageLoad(){\n  \n  const mainPage = document.createElement('div');\n\n\n  const image = new Image();\n  const headline = document.createElement('h1');\n  const description = document.createElement('p');\n\n  image.src = _images_vvadyab_png__WEBPACK_IMPORTED_MODULE_0__;\n  headline.textContent = 'The Bakery';\n  description.textContent = \"This bakery will be the best place you've ever been to.\";\n\n  mainPage.appendChild(image);\n  mainPage.appendChild(headline);\n  mainPage.appendChild(description);\n\n  return mainPage;\n}\n\n//# sourceURL=webpack://restaurantpage/./src/functions/pageLoad.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions_pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/pageLoad */ \"./src/functions/pageLoad.js\");\n\n\nconst content = document.getElementById('content');\nconsole.log(content);\ncontent.appendChild((0,_functions_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pages_pageDemo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/pageDemo */ \"./src/pages/pageDemo.js\");\n/* harmony import */ var _pages_homePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/homePage */ \"./src/pages/homePage.js\");\n\n\n\nconst content = document.getElementById(\"content\");\nconsole.log(content);\ncontent.appendChild((0,_pages_homePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n\n//TODO: Implement tab-switching logic\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pages/homePage.js":
+/*!*******************************!*\
+  !*** ./src/pages/homePage.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getHomePage)\n/* harmony export */ });\n/* harmony import */ var _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/breadsByPixabay.jpg */ \"./src/images/breadsByPixabay.jpg\");\n\n\nfunction getHomePage() {\n  const homePage = document.createElement(\"div\");\n\n  const title = document.createElement(\"h1\");\n  const desc1 = document.createElement(\"h2\");\n  const desc2 = document.createElement(\"h2\");\n  const desc3 = document.createElement(\"h2\");\n  const bread = new Image();\n\n  title.textContent = \"The Bakery\";\n  desc1.textContent = \"This is the place that sells bread\";\n  desc2.textContent = \"We're very excited to offer you tons of bread, and a little butter to go along\";\n  desc3.textContent = \"This bread place has been in business for over 15000 years. That's right, we're older than civilization. We invented bread, so shut up and buy\";\n  bread.src = _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n  title.classList = \"title\";\n  desc1.classList = \"description\";\n  desc2.classList = \"description\";\n  desc3.classList = \"description\";\n  bread.classList = \"background\";\n\n  homePage.appendChild(title);\n  homePage.appendChild(desc1);\n  homePage.appendChild(desc2);\n  homePage.appendChild(desc3);\n  homePage.appendChild(bread);\n\n  return homePage;\n}\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/homePage.js?");
+
+/***/ }),
+
+/***/ "./src/pages/pageDemo.js":
+/*!*******************************!*\
+  !*** ./src/pages/pageDemo.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _images_vvadyab_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/vvadyab.png */ \"./src/images/vvadyab.png\");\n\n\nfunction pageLoad() {\n  const mainPage = document.createElement(\"div\");\n\n  const image = new Image();\n  const headline = document.createElement(\"h1\");\n  const description = document.createElement(\"p\");\n\n  image.src = _images_vvadyab_png__WEBPACK_IMPORTED_MODULE_0__;\n  headline.textContent = \"The Bakery\";\n  description.textContent =\n    \"This bakery will be the best place you've ever been to.\";\n\n  mainPage.appendChild(image);\n  mainPage.appendChild(headline);\n  mainPage.appendChild(description);\n\n  return mainPage;\n}\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/pageDemo.js?");
+
+/***/ }),
+
+/***/ "./src/images/breadsByPixabay.jpg":
+/*!****************************************!*\
+  !*** ./src/images/breadsByPixabay.jpg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"be6e04026b71c47e39a4.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/breadsByPixabay.jpg?");
 
 /***/ }),
 
