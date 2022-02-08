@@ -4,5 +4,8 @@ export function generateTextElement(documentType, classList, textContent) {
   element.classList = classList;
 
   return element;
+}
 
+export function generateEmptyDiv() {
+  return document.createElement("div");
 }
