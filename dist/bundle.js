@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/functions/elementGenerator.js":
+/*!*******************************************!*\
+  !*** ./src/functions/elementGenerator.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"generateTextElement\": () => (/* binding */ generateTextElement)\n/* harmony export */ });\nfunction generateTextElement(documentType, classList, textContent) {\n  const element = document.createElement(documentType);\n  element.textContent = textContent;\n  element.classList = classList;\n\n  return element;\n\n}\n\n//# sourceURL=webpack://restaurantpage/./src/functions/elementGenerator.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getHomePage)\n/* harmony export */ });\n/* harmony import */ var _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/breadsByPixabay.jpg */ \"./src/images/breadsByPixabay.jpg\");\n\n\nfunction getHomePage() {\n  const homePage = document.createElement(\"div\");\n\n  const title = generateElement(\"h1\", \"title\", \"The Bakery\");\n  const desc1 = generateElement(\"h2\", \"description\", \"This is the place that sells bread\");\n  const desc2 = generateElement(\"h2\", \"description\", \"We're very excited to offer you tons of bread, and a little butter to go along\");\n  const desc3 = generateElement(\"h2\", \"description\", \"This bread place has been in business for over 15000 years. That's right, we're older than civilization.\");\n  \n  const bread = new Image();\n  bread.src = _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  bread.classList = \"background\";\n\n  homePage.appendChild(title);\n  homePage.appendChild(desc1);\n  homePage.appendChild(desc2);\n  homePage.appendChild(desc3);\n  homePage.appendChild(bread);\n\n  return homePage;\n}\n\nfunction generateElement(documentType, classList, textContent) {\n  const element = document.createElement(documentType);\n  element.textContent = textContent;\n  element.classList = classList;\n\n  return element;\n\n}\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/homePage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getHomePage)\n/* harmony export */ });\n/* harmony import */ var _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/breadsByPixabay.jpg */ \"./src/images/breadsByPixabay.jpg\");\n/* harmony import */ var _functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/elementGenerator */ \"./src/functions/elementGenerator.js\");\n\n\n\nfunction getHomePage() {\n  const homePage = document.createElement(\"div\");\n\n  const title = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"h1\", \"title\", \"The Bakery\");\n  const desc1 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"h2\", \"description\", \"This is the place that sells bread\");\n  const desc2 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"h2\", \"description\", \"We're very excited to offer you tons of bread, and a little butter to go along\");\n  const desc3 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"h2\", \"description\", \"This bread place has been in business for over 15000 years. That's right, we're older than civilization.\");\n  \n  const bread = new Image();\n  bread.src = _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  bread.classList = \"background\";\n\n  homePage.appendChild(title);\n  homePage.appendChild(desc1);\n  homePage.appendChild(desc2);\n  homePage.appendChild(desc3);\n  homePage.appendChild(bread);\n\n  return homePage;\n}\n\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/homePage.js?");
 
 /***/ }),
 

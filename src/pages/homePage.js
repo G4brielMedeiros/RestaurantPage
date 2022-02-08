@@ -1,12 +1,13 @@
 import breadImg from '../images/breadsByPixabay.jpg';
+import { generateTextElement } from '../functions/elementGenerator';
 
 export default function getHomePage() {
   const homePage = document.createElement("div");
 
-  const title = generateElement("h1", "title", "The Bakery");
-  const desc1 = generateElement("h2", "description", "This is the place that sells bread");
-  const desc2 = generateElement("h2", "description", "We're very excited to offer you tons of bread, and a little butter to go along");
-  const desc3 = generateElement("h2", "description", "This bread place has been in business for over 15000 years. That's right, we're older than civilization.");
+  const title = generateTextElement("h1", "title", "The Bakery");
+  const desc1 = generateTextElement("h2", "description", "This is the place that sells bread");
+  const desc2 = generateTextElement("h2", "description", "We're very excited to offer you tons of bread, and a little butter to go along");
+  const desc3 = generateTextElement("h2", "description", "This bread place has been in business for over 15000 years. That's right, we're older than civilization.");
   
   const bread = new Image();
   bread.src = breadImg;
@@ -21,11 +22,4 @@ export default function getHomePage() {
   return homePage;
 }
 
-function generateElement(documentType, classList, textContent) {
-  const element = document.createElement(documentType);
-  element.textContent = textContent;
-  element.classList = classList;
 
-  return element;
-
-}
