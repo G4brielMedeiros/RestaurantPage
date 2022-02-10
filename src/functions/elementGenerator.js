@@ -6,6 +6,16 @@ export function generateTextElement(documentType, classList, textContent) {
   return element;
 }
 
-export function generateEmptyDiv() {
-  return document.createElement("div");
+export function generateImageElement(classList, src) {
+  const image = new Image();
+  image.src = src;
+  image.classList = classList;
+
+  return image;
+}
+
+export function generateEmptyDiv(classList) {
+  const div = document.createElement("div");
+  div.classList = classList;
+  return div;
 }
