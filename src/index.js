@@ -29,7 +29,6 @@ const menuPage = getMenuPage();
 const contactPage = getContactPage();
 const pageList = [homePage, menuPage, contactPage];
 
-// this needs refactoring
 function setActive(activePage) {
   pageList.forEach((page) => page.classList.add("hide"));
 

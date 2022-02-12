@@ -1,13 +1,10 @@
 * {
-  outline: auto;
+  background-color: lightblue;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .hide {
   display: none;
-}
-
-h1 {
-  text-align: center;
 }
 
 .navbar {
@@ -18,4 +15,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.bakery {
+  width: 600px;
+  border: 4px solid black;
 }
