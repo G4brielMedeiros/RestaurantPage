@@ -1,0 +1,21 @@
+* {
+  outline: auto;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
