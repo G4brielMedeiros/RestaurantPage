@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pages_pageDemo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/pageDemo */ \"./src/pages/pageDemo.js\");\n/* harmony import */ var _pages_homePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/homePage */ \"./src/pages/homePage.js\");\n/* harmony import */ var _functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/elementGenerator */ \"./src/functions/elementGenerator.js\");\n/* harmony import */ var _pages_menuPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/menuPage */ \"./src/pages/menuPage.js\");\n/* harmony import */ var _pages_contactPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/contactPage */ \"./src/pages/contactPage.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\n\nconst content = document.getElementById(\"content\");\nconst title = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateTextElement)(\"h1\", \"title\", \"The Bakery\");\n\n// construct navbar\nconst navbar = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateEmptyDiv)(\"navbar\");\nconst homeButtonX = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateTextElement)(\"button\", \"button button-home\", \"Home\");\nconst menuButtonX = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateTextElement)(\"button\", \"button button-menu\", \"Menu\");\nconst contactButtonX = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateTextElement)(\"button\", \"button button-contact\", \"Contact\");\n\nconst homeButton = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateEmptyDiv)(\"button button-home\");\nhomeButton.appendChild(homeButtonX);\n\nconst menuButton = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateEmptyDiv)(\"button button-menu\");\nmenuButton.appendChild(menuButtonX);\n\nconst contactButton = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_2__.generateEmptyDiv)(\"button button-contact\");\ncontactButton.appendChild(contactButtonX);\n\n// get pages\nconst homePage = (0,_pages_homePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nconst menuPage = (0,_pages_menuPage__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\nconst contactPage = (0,_pages_contactPage__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\nconst pageList = [homePage, menuPage, contactPage];\n\nfunction setActive(activePage) {\n  pageList.forEach((page) => page.classList.add(\"hide\"));\n\n  activePage.classList.remove(\"hide\");\n}\n\nhomeButton.addEventListener(\"click\", () => setActive(homePage));\n\nmenuButton.addEventListener(\"click\", () => setActive(menuPage));\n\ncontactButton.addEventListener(\"click\", () => setActive(contactPage));\n\nnavbar.append(homeButton, menuButton, contactButton);\n\n// Append elements to content page\ncontent.append(title, navbar);\n\ncontent.append(homePage, menuPage, contactPage);\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pages_homePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/homePage */ \"./src/pages/homePage.js\");\n/* harmony import */ var _functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/elementGenerator */ \"./src/functions/elementGenerator.js\");\n/* harmony import */ var _pages_menuPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/menuPage */ \"./src/pages/menuPage.js\");\n/* harmony import */ var _pages_contactPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/contactPage */ \"./src/pages/contactPage.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\n// construct title\nconst title = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"h1\", \"title\", \"The Bakery\");\n\n// construct navbar\nconst navbar = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateEmptyDiv)(\"navbar\");\nconst homeButton = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"button\", \"button button-home\", \"Home\");\nconst menuButton = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"button\", \"button button-menu\", \"Menu\");\nconst contactButton = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\"button\", \"button button-contact\", \"Contact\");\n\n// get pages\nconst homePage = (0,_pages_homePage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nconst menuPage = (0,_pages_menuPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\nconst contactPage = (0,_pages_contactPage__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n// helper function to hide inactive pages and show relevant page\nfunction show(activePage) {\n  [homePage, menuPage, contactPage]\n  .forEach((page) => page.classList.add(\"hide\"));\n\n  activePage.classList.remove(\"hide\");\n}\n\n// helper function to add event listener to show page when clicking a button\nfunction bindPage(button, page) {\n  button.addEventListener(\"click\", () => show(page));\n}\n\n// adds event listener to every button\nbindPage(homeButton, homePage);\nbindPage(menuButton, menuPage);\nbindPage(contactButton, contactPage);\n\n\n// Append elements to content page\nconst content = document.getElementById(\"content\");\nnavbar.append(homeButton, menuButton, contactButton);\ncontent.append(title, navbar);\ncontent.append(homePage, menuPage, contactPage);\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
 
 /***/ }),
 
@@ -160,16 +160,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/pageDemo.js":
-/*!*******************************!*\
-  !*** ./src/pages/pageDemo.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _images_vvadyab_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/vvadyab.png */ \"./src/images/vvadyab.png\");\n\n\nfunction pageLoad() {\n  const mainPage = document.createElement(\"div\");\n\n  const image = new Image();\n  const headline = document.createElement(\"h1\");\n  const description = document.createElement(\"p\");\n\n  image.src = _images_vvadyab_png__WEBPACK_IMPORTED_MODULE_0__;\n  headline.textContent = \"The Bakery\";\n  description.textContent =\n    \"This bakery will be the best place you've ever been to.\";\n\n  mainPage.appendChild(image);\n  mainPage.appendChild(headline);\n  mainPage.appendChild(description);\n\n  return mainPage;\n}\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/pageDemo.js?");
-
-/***/ }),
-
 /***/ "./src/images/breadsByPixabay.jpg":
 /*!****************************************!*\
   !*** ./src/images/breadsByPixabay.jpg ***!
@@ -177,16 +167,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"be6e04026b71c47e39a4.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/breadsByPixabay.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/vvadyab.png":
-/*!********************************!*\
-  !*** ./src/images/vvadyab.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"83fd4164c901406ad009.png\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/vvadyab.png?");
 
 /***/ })
 

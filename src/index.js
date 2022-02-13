@@ -1,49 +1,44 @@
-import pageLoad from "./pages/pageDemo";
 import getHomePage from "./pages/homePage";
 import { generateTextElement, generateEmptyDiv } from "./functions/elementGenerator";
 import getMenuPage from "./pages/menuPage";
 import getContactPage from "./pages/contactPage";
-import './style.css'
+import "./style.css";
 
-const content = document.getElementById("content");
+// construct title
 const title = generateTextElement("h1", "title", "The Bakery");
 
 // construct navbar
 const navbar = generateEmptyDiv("navbar");
-const homeButtonX = generateTextElement("button", "button button-home", "Home");
-const menuButtonX = generateTextElement("button", "button button-menu", "Menu");
-const contactButtonX = generateTextElement("button", "button button-contact", "Contact");
-
-const homeButton = generateEmptyDiv("button button-home");
-homeButton.appendChild(homeButtonX);
-
-const menuButton = generateEmptyDiv("button button-menu");
-menuButton.appendChild(menuButtonX);
-
-const contactButton = generateEmptyDiv("button button-contact");
-contactButton.appendChild(contactButtonX);
+const homeButton = generateTextElement("button", "button button-home", "Home");
+const menuButton = generateTextElement("button", "button button-menu", "Menu");
+const contactButton = generateTextElement("button", "button button-contact", "Contact");
 
 // get pages
 const homePage = getHomePage();
 const menuPage = getMenuPage();
 const contactPage = getContactPage();
-const pageList = [homePage, menuPage, contactPage];
 
-function setActive(activePage) {
-  pageList.forEach((page) => page.classList.add("hide"));
+// helper function to hide inactive pages and show relevant page
+function show(activePage) {
+  [homePage, menuPage, contactPage]
+  .forEach((page) => page.classList.add("hide"));
 
   activePage.classList.remove("hide");
 }
 
-homeButton.addEventListener("click", () => setActive(homePage));
+// helper function to add event listener to show page when clicking a button
+function bindPage(button, page) {
+  button.addEventListener("click", () => show(page));
+}
 
-menuButton.addEventListener("click", () => setActive(menuPage));
+// adds event listener to every button
+bindPage(homeButton, homePage);
+bindPage(menuButton, menuPage);
+bindPage(contactButton, contactPage);
 
-contactButton.addEventListener("click", () => setActive(contactPage));
-
-navbar.append(homeButton, menuButton, contactButton);
 
 // Append elements to content page
+const content = document.getElementById("content");
+navbar.append(homeButton, menuButton, contactButton);
 content.append(title, navbar);
-
 content.append(homePage, menuPage, contactPage);
