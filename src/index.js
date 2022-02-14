@@ -20,8 +20,7 @@ const contactPage = getContactPage();
 
 // helper function to hide inactive pages and show relevant page
 function show(activePage) {
-  [homePage, menuPage, contactPage]
-  .forEach((page) => page.classList.add("hide"));
+  [homePage, menuPage, contactPage].forEach((page) => page.classList.add("hide"));
 
   activePage.classList.remove("hide");
 }
@@ -36,9 +35,11 @@ bindPage(homeButton, homePage);
 bindPage(menuButton, menuPage);
 bindPage(contactButton, contactPage);
 
-
 // Append elements to content page
 const content = document.getElementById("content");
 navbar.append(homeButton, menuButton, contactButton);
 content.append(title, navbar);
 content.append(homePage, menuPage, contactPage);
+
+// testing
+show(contactPage);

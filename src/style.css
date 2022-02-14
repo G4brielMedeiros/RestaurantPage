@@ -1,6 +1,6 @@
 * {
   background-color: lightblue;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .hide {
@@ -12,8 +12,6 @@
   width: 100%;
   justify-content: center;
   gap: 10%;
-
-  
 }
 
 #content {
@@ -23,11 +21,22 @@
   text-align: center;
 }
 
-.bakery {
+img {
   width: 600px;
   border: 4px solid black;
 }
 
+.item img {
+  width: 400px;
+}
+
 .button {
   width: 80px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
 }
