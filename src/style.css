@@ -1,5 +1,5 @@
 * {
-  background-color: lightblue;
+  background-color: aquamarine;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -26,17 +26,18 @@ img {
   border: 4px solid black;
 }
 
-.item img {
-  width: 400px;
+.item img, .person img {
+  width: 300px;
 }
 
 .button {
   width: 80px;
 }
 
-.menu-items {
+.menu-items, .contact-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 50px;
 }
+

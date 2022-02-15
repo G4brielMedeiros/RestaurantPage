@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  background-color: lightblue;\\n  font-family: \\\"Courier New\\\", Courier, monospace;\\n}\\n\\n.hide {\\n  display: none;\\n}\\n\\n.navbar {\\n  display: flex;\\n  width: 100%;\\n  justify-content: center;\\n  gap: 10%;\\n}\\n\\n#content {\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n  text-align: center;\\n}\\n\\nimg {\\n  width: 600px;\\n  border: 4px solid black;\\n}\\n\\n.item img {\\n  width: 400px;\\n}\\n\\n.button {\\n  width: 80px;\\n}\\n\\n.menu-items {\\n  display: flex;\\n  flex-wrap: wrap;\\n  justify-content: space-around;\\n  gap: 50px;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurantpage/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  background-color: aquamarine;\\n  font-family: \\\"Courier New\\\", Courier, monospace;\\n}\\n\\n.hide {\\n  display: none;\\n}\\n\\n.navbar {\\n  display: flex;\\n  width: 100%;\\n  justify-content: center;\\n  gap: 10%;\\n}\\n\\n#content {\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n  text-align: center;\\n}\\n\\nimg {\\n  width: 600px;\\n  border: 4px solid black;\\n}\\n\\n.item img, .person img {\\n  width: 300px;\\n}\\n\\n.button {\\n  width: 80px;\\n}\\n\\n.menu-items, .contact-items {\\n  display: flex;\\n  flex-wrap: wrap;\\n  justify-content: space-around;\\n  gap: 50px;\\n}\\n\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurantpage/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getContactPage)\n/* harmony export */ });\n/* harmony import */ var _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/breadsByPixabay.jpg */ \"./src/images/breadsByPixabay.jpg\");\n/* harmony import */ var _functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/elementGenerator */ \"./src/functions/elementGenerator.js\");\n//TODO: Implement contact page\n\n\n\n\nfunction getContactPage() {\n  const page = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateEmptyDiv)(\"contact page hide\");\n\n  const desc1 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateTextElement)(\n    \"h2\",\n    \"description\",\n    \"This is the place that you contact us\"\n  );\n  const bread = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_1__.generateImageElement)(\"bakery\", _images_breadsByPixabay_jpg__WEBPACK_IMPORTED_MODULE_0__);\n\n  page.append(desc1, bread);\n\n  return page;\n}\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/contactPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getContactPage)\n/* harmony export */ });\n/* harmony import */ var _images_person1_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/person1.jpeg */ \"./src/images/person1.jpeg\");\n/* harmony import */ var _images_person2_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/person2.jpeg */ \"./src/images/person2.jpeg\");\n/* harmony import */ var _images_person3_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/person3.jpeg */ \"./src/images/person3.jpeg\");\n/* harmony import */ var _functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../functions/elementGenerator */ \"./src/functions/elementGenerator.js\");\n//TODO: Implement contact page\n\n\n\n\n\n\n\nfunction getContactPage() {\n  const page = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateEmptyDiv)(\"contact page hide\");\n\n  const desc1 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateTextElement)(\n    \"h2\",\n    \"description\",\n    \"This is the place that you contact us\"\n  );\n\n  const person1 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateEmptyDiv)(\"person\");\n  const person2 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateEmptyDiv)(\"person\");\n  const person3 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateEmptyDiv)(\"person\");\n\n  const personImg1 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateImageElement)(\"person-image\", _images_person1_jpeg__WEBPACK_IMPORTED_MODULE_0__);\n  const personImg2 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateImageElement)(\"person-image\", _images_person2_jpeg__WEBPACK_IMPORTED_MODULE_1__);\n  const personImg3 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateImageElement)(\"person-image\", _images_person3_jpeg__WEBPACK_IMPORTED_MODULE_2__);\n\n  const personName1 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateTextElement)(\"h3\", \"person-name\", \"James\");\n  const personName2 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateTextElement)(\"h3\", \"person-name\", \"Karen\");\n  const personName3 = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateTextElement)(\"h3\", \"person-name\", \"Tracy\");\n\n  person1.append(personImg1, personName1);\n  person2.append(personImg2, personName2);\n  person3.append(personImg3, personName3);\n\n  const people = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateEmptyDiv)(\"contact-items\");\n  people.append(person1, person2, person3);\n\n  const footer = (0,_functions_elementGenerator__WEBPACK_IMPORTED_MODULE_3__.generateTextElement)(\"p\", \"footer\", \"None of us exist.\")\n\n  page.append(desc1, people, footer );\n\n  return page;\n}\n\n\n//# sourceURL=webpack://restaurantpage/./src/pages/contactPage.js?");
 
 /***/ }),
 
@@ -197,6 +197,36 @@ eval("module.exports = __webpack_require__.p + \"d851acd055b3b9aeab5f.jpg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"f15e894ee80acbaa68e1.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/croissant-Photowill.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/person1.jpeg":
+/*!*********************************!*\
+  !*** ./src/images/person1.jpeg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ee6c5d161acaa95d0298.jpeg\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/person1.jpeg?");
+
+/***/ }),
+
+/***/ "./src/images/person2.jpeg":
+/*!*********************************!*\
+  !*** ./src/images/person2.jpeg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f3969af5605c75fb5f20.jpeg\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/person2.jpeg?");
+
+/***/ }),
+
+/***/ "./src/images/person3.jpeg":
+/*!*********************************!*\
+  !*** ./src/images/person3.jpeg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"71c0911baddf4693d44e.jpeg\";\n\n//# sourceURL=webpack://restaurantpage/./src/images/person3.jpeg?");
 
 /***/ })
 
