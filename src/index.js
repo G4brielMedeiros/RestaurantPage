@@ -40,6 +40,3 @@ const content = document.getElementById("content");
 navbar.append(homeButton, menuButton, contactButton);
 content.append(title, navbar);
 content.append(homePage, menuPage, contactPage);
-
-// testing
-show(contactPage);
